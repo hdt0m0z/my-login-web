@@ -7,7 +7,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.static('public')); 
 
 // Kết nối MongoDB
-mongoose.connect('mongodb://localhost:27017/loginDB')
+mongoose.connect('mongodb://127.0.0.1:27017/loginDB')
   .then(() => console.log('Đã kết nối Database!'))
   .catch(err => console.error('Lỗi DB:', err));
 
